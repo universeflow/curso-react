@@ -1,4 +1,4 @@
-import firebase, { firestore } from 'firebase/app';
+import firebase from 'firebase/app';
 
 // permite poder consulta a la coleccion
 // tablas o documentos 

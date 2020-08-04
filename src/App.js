@@ -9,7 +9,8 @@ import ShopPage from './pages/shop/shop.component';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and.sign-up.component';
 import Header from './components/header/header.component';
 import {auth,createUserProfileDocument} from './firebase/firebase.utils';
-import { render } from 'node-sass';
+//import { render } from 'node-sass';
+
 
 // hereda toda las funciones y propiedades de REact Component
 class App extends React.Component{
@@ -61,7 +62,7 @@ componentWillUnmount(){
   render() {
     return(
       <div>
-        <Header/>
+        <Header currentUser = {this.state.currentUser}/>
         <Switch>
           <Route exact path='/' component={HomePage} />
           <Route path = '/shop' component={ShopPage} />

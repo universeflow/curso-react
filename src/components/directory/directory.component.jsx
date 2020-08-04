@@ -45,9 +45,12 @@ class Directory extends React.Component {
       ]
     };
   }
-
+  // en directorio voy amostrar mi menu , y a ese componmetne menu , le voy a psar pproiedades , 
+  // para que en su liogica de clase pueda trabajar con ellas 
   render() {
     return (
+      // recorremos mi estado y le pasamos el id de las secckiones de mi estado
+      // para el componente MenuItem
       <div className='directory-menu'>
         {this.state.sections.map(({ id, ...otherSectionProps }) => (
           <MenuItem key={id} {...otherSectionProps} />
